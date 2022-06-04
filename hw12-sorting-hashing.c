@@ -347,7 +347,7 @@ int hashing(int *a, int **ht) /* 데이터를 배열에 저장하는 hashing함�
         {
 			index = hashcode; /* index에 hashcode를 넣음 */
 
-			while(hashtable[index] != -1) /* hashtable[index]가 -1이 아니라면 */
+			while(hashtable[index] != -1) /* hashtable[index]가 -1이 아닌 동안 while문을 반복함 */
 			{
 				index = (++index) % MAX_HASH_TABLE_SIZE; /* ++index를 MAX_HASH_TABLE_SIZE로 나눈 나머지값을 index에 넣음 */
 				/*
