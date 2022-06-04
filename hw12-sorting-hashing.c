@@ -6,26 +6,26 @@
 #define MAX_HASH_TABLE_SIZE 	MAX_ARRAY_SIZE /* MAX_HASH_TABLE_SIZE를 MAX_ARRAY_SIZE(13)으로 정의 */
 
 /* 필요에 따라 함수 추가 가능 */
-int initialize(int **a);
-int freeArray(int *a);
-void printArray(int *a);
+int initialize(int **a); /* 초기화하는 함수 선언 */
+int freeArray(int *a); /* 배열을 free시키는 함수 선언 */
+void printArray(int *a); /* 배열을 print하는 함수 선언 */
 
-int selectionSort(int *a);
-int insertionSort(int *a);
-int bubbleSort(int *a);
-int shellSort(int *a);
+int selectionSort(int *a); /* 정렬을 선택하는 함수 선언 */
+int insertionSort(int *a); /* 정렬을 삽입하는 함수 선언 */
+int bubbleSort(int *a); /* 버블정렬 함수 선언 */
+int shellSort(int *a); /* 셸정렬 함수 선언 */
 /* recursive function으로 구현 */
-int quickSort(int *a, int n);
+int quickSort(int *a, int n); /* 퀵정렬 함수 선언 */
 
 
 /* hash code generator, key % MAX_HASH_TABLE_SIZE */
-int hashCode(int key);
+int hashCode(int key); /* hashCode함수 선언 */
 
 /* array a에대 한 hash table을 만든다. */
-int hashing(int *a, int **ht);
+int hashing(int *a, int **ht); /* 데이터를 배열에 저장하는 hashing함수 선언 */
 
 /* hash table에서 key를 찾아 hash table의 index return */
-int search(int *ht, int key);
+int search(int *ht, int key); /* 탐색하는 함수 선언 */
 
 
 int main()
